@@ -1,0 +1,986 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background: #fff5f7;
+    color: #4a3038;
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    background: rgba(255, 255, 255, 0.97);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(100, 50, 70, 0.08);
+}
+
+.logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    color: #d45b7c;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #57343e;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #d45b7c;
+}
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section {
+    width: 100%;
+    padding: 90px 7%;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    color: #b94b6b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+    min-height: calc(100vh - 75px);
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background:
+        radial-gradient(circle at 10% 20%, #ffe5ed 0%, transparent 30%),
+        radial-gradient(circle at 90% 80%, #ffeaf0 0%, transparent 30%),
+        linear-gradient(135deg, #fff7f9, #ffeef3);
+}
+
+.home-content {
+    width: 52%;
+    max-width: 650px;
+}
+
+.small-title {
+    color: #b94b6b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.home-content h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1.15;
+    color: #c94f72;
+    margin-bottom: 25px;
+}
+
+.home-content h1 span {
+    display: block;
+    font-size: 0.65em;
+    color: #704552;
+}
+
+.description {
+    max-width: 600px;
+    font-size: 16px;
+    color: #60444d;
+    margin-bottom: 30px;
+}
+
+.home-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-frame {
+    width: 100%;
+    max-width: 480px;
+    padding: 14px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 15px 45px rgba(80, 40, 50, 0.12);
+    transform: rotate(1deg);
+    transition: transform 0.4s ease;
+}
+
+.image-frame:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    background: #fff7f8;
+    border-radius: 22px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.main-button,
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: linear-gradient(135deg, #d45b7c, #bb4668);
+    color: white;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(212, 91, 124, 0.22);
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.main-button:hover,
+.btn:hover {
+    background: #a93d5d;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(212, 91, 124, 0.28);
+}
+
+.page-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* =========================
+   STORY SECTION
+========================= */
+
+.story {
+    background: #fff;
+}
+
+.story-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.story-heading h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(45px, 5vw, 68px);
+    line-height: 1.2;
+    color: #c94f72;
+}
+
+.story-heading h2 span {
+    display: block;
+    color: #704552;
+}
+
+.story-text {
+    font-size: 16px;
+}
+
+.story-text p {
+    margin-bottom: 22px;
+}
+
+.special-text {
+    color: #b54867;
+    font-weight: 600;
+}
+
+/* =========================
+   QUOTE SECTION
+========================= */
+
+.quote-section {
+    background: #ffe8ee;
+    text-align: center;
+}
+
+.quote-box {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.quote-mark {
+    font-family: "Dancing Script", cursive;
+    font-size: 85px;
+    color: #d45b7c;
+    line-height: 0.7;
+}
+
+.quote-box h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(38px, 5vw, 58px);
+    color: #a94463;
+    margin: 25px 0;
+    line-height: 1.25;
+}
+
+.quote-box p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 25px;
+    color: #a94463;
+    font-weight: 500;
+}
+
+/* =========================
+   HOME MEMORIES PREVIEW
+========================= */
+
+.memories {
+    background: #fff8fa;
+}
+
+.memory-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.memory-heading h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(45px, 5vw, 65px);
+    color: #c94f72;
+}
+
+.memory-heading h2 span {
+    color: #704552;
+}
+
+.memory-heading p {
+    margin-top: 10px;
+}
+
+.mini-gallery {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.mini-photo {
+    background: white;
+    padding: 12px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(80, 40, 50, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-photo:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(80, 40, 50, 0.14);
+}
+
+.mini-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #fff5f7;
+    border-radius: 15px;
+}
+
+/* =========================
+   LETTER SECTION
+========================= */
+
+.letter-section {
+    background: #fff;
+}
+
+.letter-box {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 55px;
+    background: #fffafa;
+    border: 1px solid #f9e4eb;
+    border-radius: 28px;
+    box-shadow: 0 12px 45px rgba(80, 40, 50, 0.09);
+}
+
+.letter-heart {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.letter-box h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(42px, 5vw, 65px);
+    color: #c94f72;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.letter-box p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.letter-box strong {
+    color: #b54867;
+}
+
+.letter-section > .section-title {
+    margin-bottom: 35px;
+}
+
+/* =========================
+   PROMISE TEXT
+========================= */
+
+.promise-text {
+    margin: 45px 0;
+    padding: 30px;
+    background: #fff0f4;
+    border-left: 4px solid #d45b7c;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.promise-text p {
+    margin-bottom: 12px;
+}
+
+.promise-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   MEETING MESSAGE
+========================= */
+
+.meeting-message {
+    width: 100%;
+    margin: 50px 0;
+    padding: 35px;
+    text-align: center;
+    background: #fff0f4;
+    border-radius: 22px;
+    border: 1px solid #f5d6df;
+}
+
+.meeting-message h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: #c94f72;
+    margin-bottom: 20px;
+}
+
+.meeting-message p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   HEART MESSAGE
+========================= */
+
+.heart-message {
+    width: 100%;
+    margin: 55px 0;
+    padding: 45px;
+    background: #fff;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(80, 40, 50, 0.07);
+}
+
+.heart-message .quote-mark {
+    font-size: 65px;
+}
+
+.heart-message h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 43px;
+    color: #c94f72;
+    margin-bottom: 20px;
+}
+
+.heart-message p {
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+/* =========================
+   EMOTIONAL LINE
+========================= */
+
+.emotional-line {
+    color: #b54867;
+    font-size: 19px !important;
+    font-weight: 500;
+}
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature {
+    margin-top: 45px;
+    text-align: right;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #b54867;
+}
+
+/* =========================
+   MEMORIES PAGE
+========================= */
+
+.memories-page {
+    width: 100%;
+    background: #fff8fa;
+}
+
+.memory-intro {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.memory-number {
+    color: #b94b6b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.memory-intro h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(50px, 7vw, 80px);
+    color: #c94f72;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.memory-intro h1 span {
+    color: #704552;
+}
+
+.memory-intro > p {
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+/* =========================
+   BIG MEMORY CARDS
+========================= */
+
+.big-memory {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.memory-image {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(80, 40, 50, 0.09);
+    transition: transform 0.3s ease;
+}
+
+.memory-image:hover {
+    transform: translateY(-5px);
+}
+
+.memory-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background: #fff5f7;
+    border-radius: 18px;
+}
+
+.memory-text span {
+    color: #b94b6b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.memory-text h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(38px, 4vw, 55px);
+    line-height: 1.2;
+    color: #c94f72;
+    margin: 18px 0;
+}
+
+.memory-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Alternate memory layout */
+
+.big-memory:nth-of-type(odd) {
+    direction: ltr;
+}
+
+.big-memory:nth-of-type(even) {
+    direction: rtl;
+}
+
+.big-memory:nth-of-type(even) .memory-text {
+    direction: ltr;
+}
+
+/* =========================
+   MEMORY ENDING
+========================= */
+
+.memory-ending {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.memory-ending h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(42px, 5vw, 65px);
+    color: #c94f72;
+    line-height: 1.3;
+    margin: 20px 0 30px;
+}
+
+.memory-ending h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 38px;
+    color: #b54867;
+    margin: 35px 0 15px;
+}
+
+.memory-ending p {
+    margin: 15px auto;
+    font-size: 16px;
+    max-width: 700px;
+}
+
+/* =========================
+   PROMISE PAGE
+========================= */
+
+.promise-section {
+    width: 100%;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 10% 10%, #ffe8ef, transparent 30%),
+        radial-gradient(circle at 90% 90%, #ffe8ef, transparent 30%),
+        linear-gradient(135deg, #fff7f9, #ffeef3);
+}
+
+.promise-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid #f9e4eb;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(80, 40, 50, 0.10);
+}
+
+.promise-box h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(48px, 6vw, 72px);
+    color: #c94f72;
+    margin-bottom: 30px;
+}
+
+.promise-box > p {
+    max-width: 750px;
+    margin: 0 auto 22px;
+    font-size: 16px;
+}
+
+.promise-list {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 15px 25px;
+    background: #fff8fa;
+    border-radius: 18px;
+}
+
+.promise-list p {
+    padding: 15px 10px;
+    text-align: left;
+    border-bottom: 1px solid #f1d9df;
+}
+
+.promise-list p:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   FINAL MESSAGE
+========================= */
+
+.final-section,
+.final-message {
+    width: 100%;
+    padding: 100px 7%;
+    text-align: center;
+    background: #fff;
+}
+
+.final-content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.final-content h2,
+.final-message h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(45px, 6vw, 68px);
+    color: #c94f72;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.final-content h2 span {
+    color: #704552;
+}
+
+.final-content p,
+.final-message p {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 17px;
+}
+
+.big-line {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px !important;
+    color: #b54867;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center;
+    background: #4f3039;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-heart {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   TABLETS AND MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 13px 5%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 65px 5%;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 58px;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-image {
+        width: 100%;
+    }
+
+    .image-frame {
+        max-width: 420px;
+    }
+
+    .image-frame img {
+        height: 380px;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .mini-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-photo img {
+        height: 300px;
+    }
+
+    .letter-box {
+        padding: 35px 22px;
+    }
+
+    .letter-box p {
+        font-size: 15px;
+    }
+
+    .memory-intro {
+        padding: 60px 10px;
+    }
+
+    .big-memory {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .big-memory:nth-of-type(even) {
+        direction: ltr;
+    }
+
+    .big-memory:nth-of-type(even) .memory-text {
+        direction: ltr;
+    }
+
+    .memory-image img {
+        height: 330px;
+    }
+
+    .memory-text h2 {
+        font-size: 40px;
+    }
+
+    .promise-box {
+        padding: 40px 22px;
+    }
+
+    .promise-list {
+        padding: 10px;
+    }
+
+    .promise-list p {
+        font-size: 14px;
+    }
+
+    .meeting-message,
+    .heart-message {
+        padding: 30px 20px;
+    }
+
+    .final-section,
+    .final-message {
+        padding: 70px 5%;
+    }
+
+    .final-content p,
+    .final-message p {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .image-frame img {
+        height: 300px;
+    }
+
+    .memory-image img {
+        height: 280px;
+    }
+
+    .quote-box h2 {
+        font-size: 38px;
+    }
+
+    .heart-message h2 {
+        font-size: 36px;
+    }
+
+    .meeting-message h3 {
+        font-size: 36px;
+    }
+
+    .promise-box h1 {
+        font-size: 46px;
+    }
+
+    .signature {
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .memory-ending {
+        padding: 55px 10px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
